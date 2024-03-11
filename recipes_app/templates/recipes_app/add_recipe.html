@@ -1,0 +1,12 @@
+{% extends 'recipes_app/index.html' %}
+
+{% block title %}Подробнее о рецепте{% endblock %}
+
+{% block content %}
+    <h1>Add Recipe</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Add Recipe</button>
+    </form>
+{% endblock %}

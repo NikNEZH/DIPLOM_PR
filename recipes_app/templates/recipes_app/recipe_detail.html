@@ -1,0 +1,11 @@
+{% extends 'recipes_app/index.html' %}
+
+{% block title %}Подробнее о рецепте{% endblock %}
+
+{% block content %}
+    <h1>{{ recipe.title }}</h1>
+    <p><strong>Description:</strong> {{ recipe.description }}</p>
+    <p><strong>Steps:</strong> {{ recipe.steps }}</p>
+    <p><strong>Cooking Time:</strong> {{ recipe.cooking_time }}</p>
+    <img src="{{ recipe.image.url }}" alt="{{ recipe.title }}" style="max-height:300px">
+{% endblock %}

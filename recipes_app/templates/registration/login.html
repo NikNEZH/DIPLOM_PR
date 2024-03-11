@@ -1,0 +1,12 @@
+{% extends 'recipes_app/index.html' %}
+
+{% block title %}Подробнее о рецепте{% endblock %}
+
+{% block content %}
+    <h1>Login</h1>
+    <form method="post" action="{% url 'login' %}">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit">Login</button>
+    </form>
+{% endblock %}
