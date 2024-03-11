@@ -1,5 +1,4 @@
 /media/
-/recipes_app/static/
 *.sqlite3
 *.log
 *.pyc

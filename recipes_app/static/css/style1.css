@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    font-weight: 400;
+    overflow-x: hidden;
+    color: #d032d9;
+    background: url(https://techblog.sdstudio.top/wp-content/uploads/2022/08/cf93ea2733a2bb51d97c2dcee06d2290-1.png);
+    background-size: 100%;
+    no-repeat center;
+    height: 100%;
+}
+
+.header {
+    font-family: 'Sacramento', cursive;
+    background-color: rgba(255, 255, 255, 0.7); /* прозрачный белый цвет фона (значение альфа канала от 0 до 1) */
+    color: #333; /* цвет текста */
+    padding: 20px
+    height: 74px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+.hidden {
+    display: none;
+}
+
+
+
+a {
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+  background: rgb(122, 46, 46);
+  border-radius: 15px;
+  animation: ligth 1.5s linear infinite alternate;
+}
+
+@keyframes ligth {
+  0% {
+    box-shadow: 0 0 20px 0 rgba(201, 235, 10, 0.808);
+  }
+  100% {
+    box-shadow: 0 0 20px 0 rgb(221, 164, 7);
+  }
+}
+
+a:hover {
+  cursor: pointer;
+  color: #d032d9;
+}
+
+#buton {
+  position: fixed;
+  text-align: right;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.content {
+  flex: 1 0 auto;
+}
+.footer {
+  flex: 0 0 auto;
+}
+.footer {
+    background: #222224;
+    padding: 43px 20px 10px;
+}
+
+@media (min-width: 768px) {
+    .footer {
+        padding: 24px 32px;
+    }
+}
+
+.footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .footer .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.footerLeft {
+    display: flex;
+}
+
+.footer a {
+    color: black;
+    background: white;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    background: #f16d7f;
+    color: white;
+}
+
+.footer a:not(:last-child) {
+    margin-right: 7px;
+}
+
+.footerRight {
+    color: white;
+}
+
+@media (max-width: 767px) {
+    .footerRight {
+        margin-top: 40px;
+    }
+}
